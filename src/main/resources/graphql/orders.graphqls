@@ -1,0 +1,19 @@
+# Customers object type mapper
+type Orders {
+    id: ID
+    location: String!
+    orderCost: Int!
+    deliveryCost: Int!
+    totalCost: Int!
+    deliveryDate: String!
+    createdAt: String
+    items: [Items]!
+}
+
+# Used as input object in the mutations
+input OrderInput {
+    location: String!
+    deliveryDate: String!
+    customerId: Int!
+    itemIds: [Int]!
+}

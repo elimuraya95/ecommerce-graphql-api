@@ -1,0 +1,14 @@
+type Query {
+    # Queries for the customer object type
+    fetchCustomers: [Customers]
+    # Queries for the customer object type
+    fetchItems: [Items]
+}
+
+type Mutation {
+    # Order object Mutations
+    createOrder(order: OrderInput!): Orders
+
+    # Customer object Mutations
+    createCustomer(customer: CustomerInput!): Customers
+}

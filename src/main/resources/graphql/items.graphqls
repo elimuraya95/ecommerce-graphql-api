@@ -1,0 +1,10 @@
+# Items object type mapper
+type Items {
+    id: ID
+    itemCode: String
+    itemName: String
+    itemDescription: String
+    cost: Int
+    currency: String
+    createdAt: String
+}

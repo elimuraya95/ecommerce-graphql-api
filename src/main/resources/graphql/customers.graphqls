@@ -1,0 +1,17 @@
+# Customers object type mapper
+type Customers {
+    id: ID
+    name: String!
+    email: String!
+    msisdn: String!
+    status: String
+    signUpDate: String
+    orders: [Orders]
+}
+
+# Used as input object in the mutations
+input CustomerInput {
+    name: String!
+    email: String!
+    msisdn: String!
+}
